@@ -3,11 +3,7 @@ import os
 
 
 def main():
-
-    # lottery_numbers = [32, 16, 19, 57, 34]
-    # power_ball = 13
     # times_to_win(lottery_numbers, power_ball)
-
     generate_lotto_numbers(10)
 
 
@@ -51,6 +47,7 @@ def times_to_win(args, x):
 
 def generate_lotto_numbers(amount):
     correct_amount = amount + 1
+	# Display lotto Numbers the ammount of times listed in the variable
     for x in range(1, correct_amount):
         print('Lottery Numbers: ' + str(random.sample(range(1, 70, 1), 5)) + ' - Power Ball: ' + str(pwr_ball()))
 
